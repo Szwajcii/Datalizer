@@ -21,4 +21,9 @@ public class WebController {
         return "categories";
     }
 
+    @GetMapping("/generator")
+    public String hangleGenerator() {
+        return "generator";
+    }
+
 }
