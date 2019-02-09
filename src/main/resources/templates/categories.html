@@ -1,5 +1,5 @@
-<!doctype <!DOCTYPE html>
-<html>
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -26,20 +26,20 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">datalizer</a>
+        <a class="navbar-brand" th:href="index">datalizer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" th:href="index">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="generator.html">Generator</a>
+                    <a class="nav-link" th:href="generator">Generator</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" th:href="about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-user-plus"></i> Sign up</a>
