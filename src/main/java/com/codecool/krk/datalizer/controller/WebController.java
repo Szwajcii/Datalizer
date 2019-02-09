@@ -22,7 +22,7 @@ public class WebController {
     }
 
     @GetMapping("/generator")
-    public String hangleGenerator() {
+    public String handleGenerator() {
         return "generator";
     }
 
