@@ -11,4 +11,14 @@ public class WebController {
         return "index";
     }
 
+    @GetMapping("/about")
+    public String handleAbout() {
+        return "about";
+    }
+
+    @GetMapping("/categories")
+    public String handleCategories() {
+        return "categories";
+    }
+
 }
