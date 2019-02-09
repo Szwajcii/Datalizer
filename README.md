@@ -26,6 +26,6 @@
 3. Postman
 
 ### Authors: 
+- Damian Szwajkos [Github profile](https://github.com/Szwajcii)
 - Bartosz Pyrz [Github profile](https://github.com/Czakero)
 - Dawid Grygier [Github profile](https://github.com/cyan0505)
-- Damian Szwajkos [Github profile](https://github.com/Szwajcii)
