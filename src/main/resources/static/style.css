@@ -1,0 +1,136 @@
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+hr {
+    color: black;
+}
+
+#deleteRow a{
+    color: black;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.f-content {
+    color: #343a40;
+}
+
+.reserve-btn {
+
+    border: 2px solid #343a40;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #343a40;
+    text-align: center;
+}
+
+.reserve-btn:hover {
+    border: 2px solid #343a40;
+    background-color: #343a40;
+    color: white;
+}
+
+
+.generate-btn {
+
+    border: 2px solid #28a745;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #343a40;
+    text-align: center;
+
+}
+
+.add-btn {
+
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #343a40;
+    text-align: center; 
+
+}
+
+.arrow-btn {
+
+    border: 1px solid #ced4da;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #343a40;
+    text-align: center;
+    
+}
+
+
+.jumbotron {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+
+.bg-cover {
+    background-image: url(imgs/datalizer_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.grey {
+    color: #343a40;
+}
+
+
+.category-icon {
+    font-size: 50px;
+    text-align: center;
+}
+
+.category-text {
+    text-align: left;
+    font-size: 40px;
+} 
+
+.record-icon {
+    font-size: 25px;
+    text-align: center;    
+}
+
+.record-text {
+    font-size: 20px;
+    text-align: left;    
+}
+
+.records {
+    width: 200px;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color 
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.steps {
+    text-align: between;
+}
+
+.gif {
+    width: 100%;
+    height: auto;
+}
