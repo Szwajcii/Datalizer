@@ -48,6 +48,18 @@ public class ColumnsMethods {
         functions.put("country", this::getRandomCountry);
 
 
+        //Cars
+        functions.put("car_make", this::getRandomCarMake);
+        functions.put("car_model", this::getRandomCarModel);
+        functions.put("car_model_year", this::getRandomCarModelYear);
+
+
+        //Movies
+        functions.put("movie_genre", this::getRandomMovieGenre);
+        functions.put("movie_title", this::getRandomMovieTitle);
+
+        //Products
+        functions.put("price", this::getRandomProductPrice);
 
 
     }
