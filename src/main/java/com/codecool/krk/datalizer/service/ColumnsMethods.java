@@ -26,7 +26,15 @@ public class ColumnsMethods {
         functions.put("last_name", this::getRandomSecondName);
         functions.put("nick_name", this::getRandomNickName);
 
+        //Contact data
+        functions.put("phone", this::getRandomPhoneNumber);
+        functions.put("email", this::getRandomEmail);
 
+
+        //Address
+        functions.put("street", this::getRandomStreet);
+        functions.put("city", this::getRandomCity);
+        functions.put("country", this::getRandomCountry);
 
 
     }
