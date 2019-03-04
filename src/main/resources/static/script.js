@@ -17,4 +17,21 @@ $(document).ready(function() {
     $('#tableMain').on('click', '#breakrow', function(){
         $(this).nextUntil('#breakrow').slideToggle(200);
     });
-})
+});
+
+
+
+function getColumnsToGenerate() {
+
+    var columnList = [];
+
+
+    var httpRequest = new XMLHttpRequest();
+
+    var json = "{\"columns\": " + JSON.stringify(columnList) + "}";
+
+    httpRequest.open('POST', '/');
+    httpRequest.send(json);
+
+}
+
