@@ -61,6 +61,8 @@ public class ColumnsMethods {
         //Products
         functions.put("price", this::getRandomProductPrice);
 
+        functions.put("credit_card_number", this::getRandomCreditCardNumber);
+
 
     }
 
