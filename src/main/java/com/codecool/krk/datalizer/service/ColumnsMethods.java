@@ -4,9 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
+
 public class ColumnsMethods {
 
     private Map<String, Supplier<String>> functions;
+    private MockNeat mock = MockNeat.threadLocal();
     private static int idUser = 1;
 
     public ColumnsMethods() {
