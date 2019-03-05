@@ -27,7 +27,7 @@ public class ColumnsMethods {
 
         //Personal data
         functions.put("first_name", this::getRandomFirstName);
-        functions.put("last_name", this::getRandomLastdName);
+        functions.put("last_name", this::getRandomLastName);
         functions.put("age", this::getRandomAge);
 
         functions.put("city", this::getRandomCity);
@@ -78,16 +78,15 @@ public class ColumnsMethods {
         return mock.names().first().get();
     }
 
-    private String getRandomLastdName(){
+    private String getRandomLastName(){
         return mock.names().last().get();
     }
 
     private String getRandomAge(){
-        return mock.ints().range(10, 90).get();
-    }
+        return String.valueOf(mock.ints().range(10, 90).get());    }
 
     private String getRandomCity(){
-        return mock.cities().get();
+        return mock.cities().us().get();
     }
 
     private String getRandomEmail(){

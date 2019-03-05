@@ -35,6 +35,9 @@ public class WebController {
     @PostMapping("/data")
     public String handleGeneratedData(HttpEntity<String> request) throws IOException {
 
+
+        System.out.println("DATA");
+
         Gson g = new Gson();
         String json = request.getBody();
 
