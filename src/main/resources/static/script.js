@@ -30,6 +30,15 @@ function getColumnsToGenerate() {
     var columnList = [];
 
     var records = document.querySelector(".records");
+    var optionList = document.getElementsByClassName(".option");
+
+    for(var i = 0; i < optionList.length; i++) {
+
+        var column = document.querySelector("option");
+        var columnName = new Column(column.name);
+        columnList.push(columnName);
+
+    }
 
 
     var httpRequest = new XMLHttpRequest();
