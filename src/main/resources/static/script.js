@@ -41,3 +41,9 @@ function getColumnsToGenerate() {
 
 }
 
+
+class Column {
+    constructor(name) {
+        this.name = name;
+    }
+}
