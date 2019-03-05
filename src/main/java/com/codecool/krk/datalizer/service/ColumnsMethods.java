@@ -6,6 +6,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
+import static net.andreinc.mockneat.types.enums.CreditCardType.VISA_16;
+import static net.andreinc.mockneat.types.enums.DomainSuffixType.POPULAR;
+import static net.andreinc.mockneat.types.enums.HostNameType.ADVERB_VERB;
+import static net.andreinc.mockneat.types.enums.NameType.FIRST_NAME_FEMALE;
+import static net.andreinc.mockneat.types.enums.NameType.FIRST_NAME_MALE;
+import static net.andreinc.mockneat.types.enums.PassStrengthType.MEDIUM;
+import static net.andreinc.mockneat.types.enums.PassStrengthType.WEAK;
+import static net.andreinc.mockneat.types.enums.URLSchemeType.HTTP;
+
 
 public class ColumnsMethods {
 
@@ -41,12 +50,12 @@ public class ColumnsMethods {
         functions.put("city_US", this::getRandomCityInUS);
         functions.put("city_EU", this::getRandomCityInEU);
         functions.put("capitals_world", this::getRandomCapitalWorld);
-        functions.put("capitals_EU", this::getRandomCapitalEU);
+//        functions.put("capitals_EU", this::getRandomCapitalEU);
         functions.put("country", this::getRandomCountry);
 
 
         //Others
-        functions.put("industry", this::getRandomIndustry);
+//        functions.put("industry", this::getRandomIndustry);
         functions.put("creditcard_name", this::getRandomCreditcardCompanyName);
         functions.put("creditcard_number_visa", this::getRandomCreditcardNumberVisa);
         functions.put("creditcard_number_american_express", this::getRandomCreditcardNumberAmericanExpress);
@@ -55,7 +64,7 @@ public class ColumnsMethods {
         functions.put("ipv6", this::getRandomIPv6);
         functions.put("login", this::getRandomLogin);
         functions.put("password", this::getRandomPassword);
-        functions.put("url", this::getRandomURL);
+//        functions.put("url", this::getRandomURL);
     }
 
 
@@ -106,13 +115,13 @@ public class ColumnsMethods {
         return mock.cities().capitals().get();
     }
 
-    private String getRandomCapitalEU(){
-        return mock.cities().capitalsEurope().get();
-    }
+//    private String getRandomCapitalEU(){
+//        return mock.cities().capitalsEurope().get();
+//    }
 
-    private String getRandomIndustry(){
-        return mock.industries().get();
-    }
+//    private String getRandomIndustry(){
+//        return mock.industries().get();
+//    }
 
     private String getRandomCreditcardNumberVisa(){
         return mock.creditCards().type(VISA_16).get();
@@ -146,7 +155,7 @@ public class ColumnsMethods {
         return mock.passwords().type(MEDIUM).get();
     }
 
-    private String getRandomURL() {
-        return mock.urls().scheme(HTTP).domain(POPULAR).host(ADVERB_VERB);
-    }
+//    private String getRandomURL() {
+//        return mock.urls().scheme(HTTP).domain(POPULAR).host(ADVERB_VERB);
+//    }
 }
