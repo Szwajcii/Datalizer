@@ -8,19 +8,20 @@ import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.IOException;
 
 @Controller
 public class WebController {
 
-    private IDataGenerator dataGenerator;
+//    private IDataGenerator dataGenerator;
 
 
-    @Autowired
-    public WebController(IDataGenerator dataGenerator) {
-        this.dataGenerator = dataGenerator;
-    }
+//    @Autowired
+//    public WebController(IDataGenerator dataGenerator) {
+//        this.dataGenerator = dataGenerator;
+//    }
 
 
     @GetMapping("/index")
@@ -46,7 +47,6 @@ public class WebController {
 
     @PostMapping("/data")
     public String handleGeneratedData(HttpEntity<String> request) throws IOException {
-
 
         System.out.println("DATA");
 
