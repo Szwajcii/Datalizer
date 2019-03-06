@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface IDataGenerator {
     List<String> getColumns(ColumnList columnList) throws IOException;
+    String getData(List<String> columns, int quantity) throws IOException;
 }
