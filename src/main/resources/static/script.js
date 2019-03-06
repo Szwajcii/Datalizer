@@ -87,7 +87,7 @@ class Column {
     }
 }
 
-
+//Method to verify!!!
 $(":input").keyup(function () {
    var input = $(this).val();
 
