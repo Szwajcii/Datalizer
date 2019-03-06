@@ -2,8 +2,9 @@ console.log("Connected!!!");
 
 var selectCounter = 3;
 
+// Add new row when click on the button
 $('#btnAdd').click(function() {
-    $('#dataRow:last').after('<div id="dataRow" class="d-flex row justify-content-between align-items-center my-3">' +
+    $('.dataRow:last').after('<div id="" class="d-flex row justify-content-between align-items-center my-3 dataRow">' +
         '<div class="col-1 text-center">' +
         '<button class="arrow-btn btn btn-secondary"><i class="fas fa-caret-up"></i>' +
         '</button>               </div>' +
@@ -40,15 +41,29 @@ $('#btnAdd').click(function() {
         selectCounter++;
 });
 
-$('#row').on('click', '#deleteRow',function() {
+
+// Deleting row
+$('.row').on('click', '#deleteRow',function() {
     $(this).parent().remove();
 });
 
-
+// Dropdown menu with slide effect
 $(document).ready(function() {
     $('#tableMain').on('click', '#breakrow', function(){
         $(this).nextUntil('#breakrow').slideToggle(200);
     });
+});
+
+
+//Arrow Up eventListener
+$('#arrowUp').on('click', function() {
+    console.log("Arrow UP!");
+});
+
+
+//Arrow Down eventListener
+$('#arrowDown').on('click', function() {
+    console.log("Arrow Down!");
 });
 
 
@@ -87,7 +102,7 @@ class Column {
     }
 }
 
-//Method to verify!!!
+//Method to verify!!! Check if everything works fine.
 $(":input").keyup(function () {
    var input = $(this).val();
 
