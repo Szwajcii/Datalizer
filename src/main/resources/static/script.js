@@ -63,7 +63,12 @@ function getColumnsToGenerate() {
 
     var httpRequest = new XMLHttpRequest();
 
-    var json = "{\"columns\": " + JSON.stringify(columnList) + ", \"recordNumber\": " + JSON.stringify(records.value) + "}";
+    //Nazwa wysylana w Jsonie musi byc taka sama jak pole w klasie z lista!!!!
+    var json = "{\"columnList\": " + JSON.stringify(columnList) + ", \"recordNumber\": " + JSON.stringify(records.value) + "}";
+
+    console.log(json);
+
+    var recordJson = JSON.stringify(records.value);
 
     httpRequest.open('POST', '/data');
     httpRequest.send(json);

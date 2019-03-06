@@ -1,8 +1,15 @@
 package com.codecool.krk.datalizer.service;
 
+import com.codecool.krk.datalizer.model.Column;
+import com.codecool.krk.datalizer.model.ColumnList;
 import net.andreinc.mockneat.MockNeat;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
 
@@ -21,6 +28,7 @@ public class ColumnsMethods {
     private Map<String, Supplier<String>> functions;
     private MockNeat mock = MockNeat.threadLocal();
     private static int idUser = 1;
+
 
     public ColumnsMethods() {
         initializeMethodsMap();

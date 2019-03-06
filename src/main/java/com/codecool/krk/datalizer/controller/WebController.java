@@ -1,6 +1,8 @@
 package com.codecool.krk.datalizer.controller;
 
 import com.codecool.krk.datalizer.model.ColumnList;
+import com.codecool.krk.datalizer.service.ColumnsMethods;
+import com.codecool.krk.datalizer.service.DataGenerator;
 import com.codecool.krk.datalizer.service.IDataGenerator;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,17 +13,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.IOException;
+import java.util.List;
 
 @Controller
 public class WebController {
 
-//    private IDataGenerator dataGenerator;
+    private IDataGenerator dataGenerator;
 
 
-//    @Autowired
-//    public WebController(IDataGenerator dataGenerator) {
-//        this.dataGenerator = dataGenerator;
-//    }
+    @Autowired
+    public WebController(IDataGenerator dataGenerator) {
+        this.dataGenerator = dataGenerator;
+    }
 
 
     @GetMapping("/index")
@@ -54,6 +57,16 @@ public class WebController {
         String json = request.getBody();
 
         ColumnList columnList = g.fromJson(json, ColumnList.class);
+
+        System.out.println(json);
+
+        System.out.println("Record Number: " + columnList.getRecordNumber());
+
+        List<String> columnNames = dataGenerator.getColumns(columnList);
+
+
+        System.out.println(columnNames.toString());
+
 
         System.out.println(json);
 
