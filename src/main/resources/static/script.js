@@ -16,9 +16,23 @@ $('#btnAdd').click(function() {
             '<option>Category...</option>' +
             '<option value="first_name">First name</option>' +
             '<option value="last_name">Last name</option>' +
+            '<option value="female_name">Female name</option>' +
+            '<option value="male_name">Male name</option>' +
             '<option value="age">Age</option>' +
-            '<option value="">City</option>' +
-            '<option value="">Email address</option>' +
+            '<option value="phone_number">Phone number</option>' +
+            '<option value="email">Email address</option>' +
+            '<option value="city_US">City in United States</option>' +
+            '<option value="city_EU">City in Europe</option>' +
+            '<option value="capitals_world">Capital</option>' +
+            '<option value="country">Country</option>' +
+            '<option value="creditcard_name">Creditcard Company Name</option>' +
+            '<option value="creditcard_number_visa">Creditcard Visa Number</option>' +
+            '<option value="creditcard_number_american_express">Creditcard American Express Number</option>' +
+            '<option value="currency_code">Currency Code</option>' +
+            '<option value="ipv4">IPv4 number</option>' +
+            '<option value="ipv6">IPv6 number</option>' +
+            '<option value="login">Login</option>' +
+            '<option value="password">Password</option>' +
         '</select></div>  ' +
         '<div id="deleteRow" class="col-1 text-center"><span><i class="fas fa-trash-alt grey icon"></i></span>   ' +
         '</div>' +
