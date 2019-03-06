@@ -64,11 +64,14 @@ public class WebController {
 
         List<String> columnNames = dataGenerator.getColumns(columnList);
 
+        int recordNumber = Integer.valueOf(columnList.getRecordNumber());
 
         System.out.println(columnNames.toString());
 
-
         System.out.println(json);
+
+
+        dataGenerator.generateCSV("credential.csv", columnNames, recordNumber);
 
         return "generator";
     }

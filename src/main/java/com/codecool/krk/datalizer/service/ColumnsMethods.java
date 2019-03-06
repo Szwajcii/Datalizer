@@ -22,7 +22,7 @@ import static net.andreinc.mockneat.types.enums.PassStrengthType.MEDIUM;
 import static net.andreinc.mockneat.types.enums.PassStrengthType.WEAK;
 import static net.andreinc.mockneat.types.enums.URLSchemeType.HTTP;
 
-
+@Service
 public class ColumnsMethods {
 
     private Map<String, Supplier<String>> functions;

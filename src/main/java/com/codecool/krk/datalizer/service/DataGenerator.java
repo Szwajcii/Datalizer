@@ -2,8 +2,12 @@ package com.codecool.krk.datalizer.service;
 
 import com.codecool.krk.datalizer.model.Column;
 import com.codecool.krk.datalizer.model.ColumnList;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -63,5 +67,11 @@ public class DataGenerator implements IDataGenerator {
         return columnsNames;
     }
 
+    @Override
+    public void generateCSV(String csvName, List<String> columns, int recordNumber) throws FileNotFoundException {
+        PrintWriter pw = new PrintWriter(new File(csvName));
+        pw.write(getData(columns, recordNumber));
+        pw.close();
+    }
 
 }

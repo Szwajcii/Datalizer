@@ -63,9 +63,17 @@
         <dependency>
             <groupId>net.andreinc.mockneat</groupId>
             <artifactId>mockneat</artifactId>
-            <version>0.2.6</version>
+            <version>0.3.4</version>
         </dependency>
     </dependencies>
+
+
+    <repositories>
+        <repository>
+            <id>jcenter</id>
+            <url>https://jcenter.bintray.com/</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
