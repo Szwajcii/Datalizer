@@ -86,3 +86,19 @@ class Column {
         this.name = name;
     }
 }
+
+
+$(":input").keyup(function () {
+   var input = $(this).val();
+
+   var inputID = input.id;
+   var regex = new RegExp("^[1-9]$");
+
+   if(regex.test(input) || input == "") {
+
+   } else {
+       alert("Please enter only numbers!");
+       $(this).val(input.substring(0, input.length - 1));
+   }
+
+});
