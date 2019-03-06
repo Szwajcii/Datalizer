@@ -110,6 +110,7 @@
             </div>  
         </div>
 
+
         <!-- ROW -->
         <div id="row">
             <div id="dataRow" class="d-flex row justify-content-between align-items-center my-3">
@@ -120,16 +121,34 @@
                     <button class="arrow-btn btn btn-secondary"><i class="fas fa-caret-down"></i></button>
                 </div>
                 <div class="input-group col-4">
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Title...">
+                    <input id="title_1" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Title...">
                 </div>
                 <div class="col-5">
                     <select id="select_2" class="form-control dupa">
                         <option>Category...</option>
+                        <!--PERSONAL DATA-->
                         <option value="first_name">First name</option>
                         <option value="last_name">Last name</option>
+                        <option value="female_name">Female name</option>
+                        <option value="male_name">Male name</option>
                         <option value="age">Age</option>
-                        <option value="">City</option>
-                        <option value="">Email address</option>
+                        <!--CONTACT DATA-->
+                        <option value="phone_number">Phone number</option>
+                        <option value="email">Email address</option>
+                        <!--ADDRESS-->
+                        <option value="city_US">City in United States</option>
+                        <option value="city_EU">City in Europe</option>
+                        <option value="capitals_world">Capital</option>
+                        <option value="country">Country</option>
+                        <!--OTHERS-->
+                        <option value="creditcard_name">Creditcard Company Name</option>
+                        <option value="creditcard_number_visa">Creditcard Visa Number</option>
+                        <option value="creditcard_number_american_express">Creditcard American Express Number</option>
+                        <option value="currency_code">Currency Code</option>
+                        <option value="ipv4">IPv4 number</option>
+                        <option value="ipv6">IPv6 number</option>
+                        <option value="login">Login</option>
+                        <option value="password">Password</option>
                     </select>
                 </div>
                 <div id="deleteRow" class="col-1 text-center">
@@ -138,16 +157,7 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="row d-flex flex-column py-2">
-                <div class="py-0">
-                    <p>Number of records:</p>
-                </div>
-                <div>
-                    <input class="records" type="text" placeholder="1-1000">
-                </div>
-            </div>
-        </div>
+
         
         <!-- New row -->
         <button type="button" id="btnAdd" class="add-btn btn btn-primary mt-3 mb-2">Add another row</button>
